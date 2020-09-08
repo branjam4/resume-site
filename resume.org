@@ -1,0 +1,344 @@
+#+STARTUP: overview hideblocks
+#+TITLE: Resume
+
+* Setup :noexport:
+:PROPERTIES:
+:VISIBILITY: folded
+:END:
+** First: Collect data
+:PROPERTIES:
+:VISIBILITY: folded
+:END:
+There are nine categories within the example file, seven of which I've "org-modified" for a somewhat more intuitive data entry process.
+*** Contact
+#+NAME: contact-table
+| Property      | Value                   |
+|---------------+-------------------------|
+| profilepic    | ../resources/my-pic.jpg |
+| cvname        | Brandon Ellington       |
+| cvjobtitle    | Developer               |
+| cvdate        | June 25 1993            |
+| cvaddress     | United States           |
+| cvnumberphone | (206)450-1343           |
+| cvmail        | branjam4@gmail.com      |
+| cvsite        | noneyet.com|
+
+The catchall =custom= category. Each of these has a =\property{value}= representation in the latex file.
+*** Education
+#+BEGIN: propview :cols (DATE ITEM LOCATION DESCRIPTION)
+#+NAME: education-table
+| DATE        | ITEM                  | LOCATION                      | DESCRIPTION                    |
+|-------------+-----------------------+-------------------------------+--------------------------------|
+| 0           | "Education"           | 0                             | 0                              |
+| "2017-2020" | "Bachelor of Science" | "The Evergreen State College" | "Majoring in Computer Science" |
+| "2017-2020" | "Bachelor of Arts"    | "The Evergreen State College" | "Business Concentration"       |
+|--
+#+END:
+**** Bachelor of Science
+:PROPERTIES:
+:DATE: 2017-2020
+:LOCATION: The Evergreen State College
+:DESCRIPTION: Majoring in Computer Science
+:END:
+**** Bachelor of Arts
+:PROPERTIES:
+:DATE: 2017-2020
+:LOCATION: The Evergreen State College
+:DESCRIPTION: Business Concentration
+:END:
+*** Awards, Activities, and Achievements
+#+BEGIN: propview :cols (DATE ITEM)
+#+NAME: awards-table
+| DATE            | ITEM                                                         |
+|-----------------+--------------------------------------------------------------|
+| 0               | "Awards, Activities, and Achievements"                       |
+| "June 2019"     | "Innovation Across the Americas Award Recipient"             |
+| "October 2018"  | "Equity Honors Nominee"                                      |
+| "February 2018" | "Featured Speaker, DRIVE Conference 2018"                    |
+| 2018            | "Committee Member, Evergreen Culture and Climate Assessment" |
+| "2017-2018"     | "Student Representative to the Evergreen Board of Trustees"  |
+| "October 2017"  | "Speaker, Return to Evergreen Governor's Mansion Event"      |
+| "June 2017"     | "Presidential Equity Advisor"                                |
+| "2017-2018"     | "Leader of the Geoduck Student Union"                        |
+|--
+#+END:
+**** Innovation Across the Americas Award Recipient
+:PROPERTIES:
+:DATE: June 2019
+:END:
+**** Equity Honors Nominee
+:PROPERTIES:
+:DATE: October 2018
+:END:
+**** Featured Speaker, DRIVE Conference 2018
+:PROPERTIES:
+:DATE: February 2018
+:END:
+**** Committee Member, Evergreen Culture and Climate Assessment
+:PROPERTIES:
+:DATE: 2018
+:END:
+**** Student Representative to the Evergreen Board of Trustees
+:PROPERTIES:
+:DATE: 2017-2018
+:END:
+**** Speaker, Return to Evergreen Governor's Mansion Event
+:PROPERTIES:
+:DATE: October 2017
+:END:
+**** Presidential Equity Advisor
+:PROPERTIES:
+:DATE: June 2017
+:END:
+**** Leader of the Geoduck Student Union
+:PROPERTIES:
+:DATE: 2017-2018
+:END:
+*** Experience
+#+BEGIN: propview :cols (DATE ITEM LOCATION DESCRIPTION)
+#+NAME: experience-table
+| DATE                         | ITEM                             | LOCATION                                                    | DESCRIPTION                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+|------------------------------+----------------------------------+-------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 0                            | "Experience"                     | 0                                                           | 0                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+| "2018-2019"                  | "CRM Lynda.com Fellowship"       | "The Evergreen State College, Advancement"                  | "Shadowed the Assistant Director of Advancement Services. Learned how to use the Blackbaud Raiser's Edge Constituent Relationship Management System. Assisted with data management and building complex database query views through SQL and Excel. Served during campaign events."                                                                                                                                                                                                                         |
+| "September 2017 - June 2018" | "Office Manager"                 | "Services and Activities Fee Allocation Board"              | "Reduced budget intake, processing from 5 hours/week to <1 hour by moving from paper budgets to Google Drive, Sheets. Trained 12 board members on the function and operations of the Board."                                                                                                                                                                                                                                                                                                                |
+| "June 2017"                  | "Enterprise Software Internship" | "The Evergreen State College, Computing and Communications" | "Evaluation from my field supervisor, the Senior Systems Analyst/Programmer: \"Brandon's communication skills were particularly valuable to the team. He facilitated requirements gathering sessions with the users in my absence...He was always willing to adjust coding styles and practices to the team approach. He was the only intern I've ever trusted to lead sprint planning sessions, because he had developed the appropriate soft skills, and because he seemed to grasp the Agile process.\"" |
+|--
+#+END:
+**** CRM Lynda.com Fellowship
+:PROPERTIES:
+:DATE: 2018-2019
+:LOCATION: The Evergreen State College, Advancement
+:DESCRIPTION: Shadowed the Assistant Director of Advancement Services. Learned how to use the Blackbaud Raiser's Edge Constituent Relationship Management System. Assisted with data management and building complex database query views through SQL and Excel. Served during campaign events.
+:END:
+**** Office Manager
+:PROPERTIES:
+:DATE: September 2017 - June 2018
+:LOCATION: Services and Activities Fee Allocation Board
+:DESCRIPTION: Reduced budget intake, processing from 5 hours/week to <1 hour by moving from paper budgets to Google Drive, Sheets. Trained 12 board members on the function and operations of the Board.
+:END:
+**** Enterprise Software Internship
+:PROPERTIES:
+:DATE: June 2017
+:LOCATION: The Evergreen State College, Computing and Communications
+:DESCRIPTION: Evaluation from my field supervisor, the Senior Systems Analyst/Programmer: "Brandon's communication skills were particularly valuable to the team. He facilitated requirements gathering sessions with the users in my absence...He was always willing to adjust coding styles and practices to the team approach. He was the only intern I've ever trusted to lead sprint planning sessions, because he had developed the appropriate soft skills, and because he seemed to grasp the Agile process."
+:END:
+*** Projects
+#+BEGIN: propview :cols (DATE ITEM LOCATION DESCRIPTION)
+#+NAME: projects-table
+| DATE            | ITEM                                               | LOCATION                                            | DESCRIPTION                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+|-----------------+----------------------------------------------------+-----------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 0               | "Projects"                                         | 0                                                   | 0                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+| "June 2020"     | "Containerized Integrated Development Environment" | "https://github.com/branjam4/doom-emacs-docker.git" | "I wanted to show some of the productivity gains and programs I had leveraged while learning how to use my development environment. But even though my professor and I both had experience in this development environment, we found it challenging to share programs and configuration strategies given limited time and competing priorities. So I learned to containerize my development environment. Now anyone with Docker can try out my workflows with a couple programs (git, docker) in less than five commands, where previously it could take dozens of programs and commands."                                                                                                                                                                                                                                              |
+| "2019-2020"     | "Systems Thinking Modelling Efforts"               | "Evergreen: Self-study"                             | "Evaluation from faculty: \"[Brandon] demonstrated significant expertise in understanding group and team dynamics. He had attended a meeting with the Team Entrepreneurship program and was able to translate their methodology into a systems approach. His work represents a synthesis of basic concepts from graph theory, communication, and systems theory. The origin of the work had several roots: 1. Brandon’s active participation in student governance, 2. Brandon’s interest in the application of systems theory to social systems, and 3. Brandon’s desire to improve communication and information flow in the Evergreen community.\""                                                                                                                                                                                  |
+| "December 2018" | "Authorship- Computational Linguistics Project"    | "Evergreen Program: Computational Linguistics"      | "Evaluation from faculty: \"Brandon worked with four other students to complete the project on computationally identifying the author of a text. Their well-coordinated final presentation provided an organized overview of their process and a discussion of both obstacles and successes. Brandon provided leadership and empowerment to newer coders by guiding the group towards a process that emphasized an algorithm and descriptive understandings of what the code needed to accomplished, as well as developing the actual code and some of the details of testing strategies. The group embodied a learning community by making a commitment to make sure that everyone understood the algorithm and the code. Brandon also demonstrated their collaborative learning skills by helping two other groups on the project.\"" |
+| "June 2017"     | "Sentiment Analysis- Data Mining Project"          | "United Way of Pierce County"                       | "Worked with a team of five to leverage sentiment analysis algorithms, collecting data in the form of tweets and posts from Facebook, to quantify how receptive Pierce County residents were to United Way's reports on understanding and assisting Pierce County's ALICE (Asset Limited, Income Constrained, Employed) population. I also went a little further and familiarized myself with the methodology and data used to identify our target demographics, which helped my team put our observations into perspective. My group recognized me as the member who went the extra mile in order to connect with our client and fill their needs."                                                                                                                                                                                    |
+|--
+#+END:
+
+**** Containerized Integrated Development Environment
+:PROPERTIES:
+:DATE: June 2020
+:LOCATION: https://github.com/branjam4/doom-emacs-docker.git
+:DESCRIPTION: I wanted to show some of the productivity gains and programs I had leveraged while learning how to use my development environment. But even though my professor and I both had experience in this development environment, we found it challenging to share programs and configuration strategies given limited time and competing priorities. So I learned to containerize my development environment. Now anyone with Docker can try out my workflows with a couple programs (git, docker) in less than five commands, where previously it could take dozens of programs and commands.
+:END:
+**** Systems Thinking Modelling Efforts
+:PROPERTIES:
+:DATE: 2019-2020
+:LOCATION: Evergreen: Self-study
+:DESCRIPTION: Evaluation from faculty: "[Brandon] demonstrated significant expertise in understanding group and team dynamics. He had attended a meeting with the Team Entrepreneurship program and was able to translate their methodology into a systems approach. His work represents a synthesis of basic concepts from graph theory, communication, and systems theory. The origin of the work had several roots: 1. Brandon’s active participation in student governance, 2. Brandon’s interest in the application of systems theory to social systems, and 3. Brandon’s desire to improve communication and information flow in the Evergreen community."
+:END:
+**** Authorship- Computational Linguistics Project
+:PROPERTIES:
+:DATE: December 2018
+:LOCATION: Evergreen Program: Computational Linguistics
+:DESCRIPTION: Evaluation from faculty: "Brandon worked with four other students to complete the project on computationally identifying the author of a text. Their well-coordinated final presentation provided an organized overview of their process and a discussion of both obstacles and successes. Brandon provided leadership and empowerment to newer coders by guiding the group towards a process that emphasized an algorithm and descriptive understandings of what the code needed to accomplished, as well as developing the actual code and some of the details of testing strategies. The group embodied a learning community by making a commitment to make sure that everyone understood the algorithm and the code. Brandon also demonstrated their collaborative learning skills by helping two other groups on the project."
+:END:
+**** Sentiment Analysis- Data Mining Project
+:PROPERTIES:
+:DATE: June 2017
+:LOCATION: United Way of Pierce County
+:DESCRIPTION: Worked with a team of five to leverage sentiment analysis algorithms, collecting data in the form of tweets and posts from Facebook, to quantify how receptive Pierce County residents were to United Way's reports on understanding and assisting Pierce County's ALICE (Asset Limited, Income Constrained, Employed) population. I also went a little further and familiarized myself with the methodology and data used to identify our target demographics, which helped my team put our observations into perspective. My group recognized me as the member who went the extra mile in order to connect with our client and fill their needs.
+:END:
+*** Skills
+#+BEGIN: propview :cols (ITEM VALUE)
+#+NAME: skills-table
+| ITEM                          | VALUE |
+|-------------------------------+-------|
+| "Skills"                      |     0 |
+| "Python"                      |     4 |
+| "Functional Programming"      |   4.4 |
+| "Object-Oriented Programming" |     4 |
+| "Database Management"         |   3.8 |
+| "DevOps"                      |     3 |
+|--
+#+END:
+
+In this subtree there is an example of a [[file:20200901214515-dynamic_blocks.org][Dynamic Block]] keeping track of subtree values.
+**** Python
+:PROPERTIES:
+:Value: 4
+:END:
+**** Functional Programming
+:PROPERTIES:
+:Value: 4.4
+:END:
+**** Object-Oriented Programming
+:PROPERTIES:
+:Value: 4
+:END:
+**** Database Management
+:PROPERTIES:
+:Value: 3.8
+:END:
+**** DevOps
+:PROPERTIES:
+:Value: 3
+:END:
+*** Skills text
+#+BEGIN: propview :cols (ITEM VALUE)
+#+NAME: skillstext-table
+| ITEM          | VALUE |
+|---------------+-------|
+| "Skills text" |     0 |
+| "SQL"         |     3 |
+| "emacs"       |     3 |
+| "org-mode"    |     3 |
+| "shell"       |   2.8 |
+| "scheme"      |   2.5 |
+| "C(++)"       |   2.5 |
+| "clojure"     |   2.1 |
+| "php"         |     2 |
+| "java"        |   1.3 |
+|--
+#+END:
+
+**** SQL
+:PROPERTIES:
+:Value: 3
+:END:
+**** emacs
+:PROPERTIES:
+:Value: 3
+:END:
+**** org-mode
+:PROPERTIES:
+:Value: 3
+:END:
+**** shell
+:PROPERTIES:
+:Value: 2.8
+:END:
+**** scheme
+:PROPERTIES:
+:Value: 2.5
+:END:
+**** C(++)
+:PROPERTIES:
+:Value: 2.5
+:END:
+**** clojure
+:PROPERTIES:
+:Value: 2.1
+:END:
+**** php
+:PROPERTIES:
+:Value: 2
+:END:
+**** java
+:PROPERTIES:
+:Value: 1.3
+:END:
+** Second: Install theme
+*** [[https://themes.gohugo.io/hugo-orbit-theme/][Hugo Orbit Theme | Hugo Themes]] :website:
+This is a Hugo port of [[//github.com/xriley/Orbit-Theme][Orbit]] - great looking resume/CV template designed for developers by Xiaoying Riley.
+
+**** Screenshot [[#screenshot][]]
+[[https://raw.githubusercontent.com/aerohub/hugo-orbit-theme/master/images/screenshot.png]]
+
+**** Features [[#features][]]
+***** Original [[#original][]]
+- Fully Responsive
+- HTML5 + CSS3
+- Built on Bootstrap 3
+- 6 Colour Schemes
+- FontAwesome icons
+- *LESS* files included
+- Compatible with all modern browsers
+
+***** Added [[#added][]]
+- Google Analytics
+- Print format improvements from [[//github.com/xriley/Orbit-Theme/pull/3][PR]]
+
+**** Demo [[#demo][]]
+You can see it in action on [[http://themes.gohugo.io/theme/hugo-orbit-theme/][Hugo Themes site]].
+
+**** Contents [[#contents][]]
+- [[#installation][Installation]]
+- [[#getting-started][Getting started]]
+
+  - [[#copying-files][Copying files]]
+  - [[#configuring][Configuring]]
+  - [[#test-your-site][Test your site]]
+  - [[#build-your-site][Build your site]]
+
+- [[#contributing][Contributing]]
+- [[#license][License]]
+
+**** DONE Installation [[#installation][]]
+Inside the folder of your new Hugo site run:
+
+#+BEGIN_EXAMPLE
+   $ mkdir themes
+  $ cd themes
+  $ git clone https:themes/hugo-orbit-theme
+#+END_EXAMPLE
+
+For more information read the official [[//gohugo.io/overview/installing/][setup guide]] of Hugo.
+
+**** Getting started [[#getting-started][]]
+After installing the theme successfully it requires just a few more steps to get your resume running.
+
+***** Copying files [[#copying--files][]]
+Take a look inside the [[file:themes/hugo-orbit-theme/exampleSite][=exampleSite=]] folder of this theme. You'll find a file called [[file:themes/hugo-orbit-theme/exampleSite/config.toml][=config.toml=]]. To start just copy the =config.toml= into the root folder of your Hugo site.
+
+***** Configuring [[#configuring][]]
+Open your just-copied =config.toml= and fill it with your data. All the page content may be configured throw one file.
+
+***** Test your site [[#test-your-site][]]
+In order to see your site in action, run Hugo's built-in local server.
+
+#+BEGIN_EXAMPLE
+   $ hugo server -w
+#+END_EXAMPLE
+
+Now enter =localhost:1313= in the address bar of your browser.
+
+***** Build your site [[#build-your-site][]]
+Just run
+
+#+BEGIN_EXAMPLE
+   $ hugo
+#+END_EXAMPLE
+
+You'll find your resume files in =public= folder in the root of Hugo project.
+
+**** Contributing [[#contributing][]]
+Did you found a bug or got an idea? Feel free to use the [[themes/hugo-orbit-theme/issues][issue tracker]]. Or make directly a [[themes/hugo-orbit-theme/pulls][pull request]].
+
+**** License [[#license][]]
+The original template is released under the Creative Commons Attribution 3.0 License. Please keep the original attribution link when using for your own project. If you'd like to use the template without the attribution, you can check out other license options via template author's website: themes.3rdwavemedia.com
+
+As for Hugo port you may rewrite the “Ported for...” line with setting your name at the end of =config.toml=
+
+#+BEGIN_EXAMPLE
+   [params.footer]
+      copyright = ""
+#+END_EXAMPLE
+
+**** See Also
+- [[/hugo-devresume-theme/][Hugo Devresume Theme]]
+- [[/academic/][Academic]]
+- [[/hugo-theme-pico/][Hugo Theme Pico]]
+- [[/hugo-researcher/][Hugo Researcher]]
+- [[/academia-hugo/][Academia Hugo]]
