@@ -1,6 +1,6 @@
 [build]
 publish = "public"
-command = "hugo --configDir . --config config.toml --theme hugo-orbit-theme --gc --minify"
+command = "hugo --configDir . --config config.toml --theme hugo-orbit-theme"
 
 [context.production.environment]
 HUGO_VERSION = "0.74.3"
