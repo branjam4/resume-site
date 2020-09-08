@@ -993,7 +993,7 @@ disable404 = true
 #+BEGIN_SRC conf :tangle netlify.toml
 [build]
 publish = "public"
-command = "hugo --gc --minify"
+command = "hugo --config config.toml --gc --minify"
 
 [context.production.environment]
 HUGO_VERSION = "0.74.3"
