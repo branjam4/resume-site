@@ -1,6 +1,6 @@
 # Page settings
 
-baseurl = "http://branjam.dev/resume"
+baseurl = "https://branjam.dev"
 languageCode = "en-us"
 title = "Brandon Ellington Resume"
 theme = "hugo-orbit-theme"
