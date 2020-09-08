@@ -1,0 +1,207 @@
+# Page settings
+
+baseurl = "http://branjam.dev/resume"
+languageCode = "en-us"
+title = "Brandon Ellington Resume"
+theme = "hugo-orbit-theme"
+
+# Do not build files for websites. Need them? Set to false
+disableRSS = true
+disableSitemap = true
+disable404 = true
+
+[params]
+
+# Meta
+    description = "Brandon's Resume"
+    author = "Brandon Ellington"
+
+# Theme styles
+
+    # The original template comes with 6 colour schemes. You may choose styles below.
+    # "styles.css", "styles-2.css", "styles-3.css", "styles-4.css", "styles-5.css", "styles-6.css"
+    # are available. Also the source LESS files are included so
+    # it’s quick and easy to change the styling and colour scheme.
+
+    styles = "styles-5.css"
+
+# Sidebar sections
+
+    # Profile section
+    [params.profile]
+        name = "Brandon Ellington"
+        tagline = "Developer"
+        avatar = "profile-small.jpg"
+
+    # Contact section
+    [params.contact]
+        enable = true
+
+        [[params.contact.list]]
+        class = "email"
+        icon = "fa-envelope"
+        url = "mailto: branjam4@gmail.com"
+        title = "branjam4@gmail.com"
+        
+        [[params.contact.list]]
+        class = "phone"
+        icon = "fa-phone"
+        url = "tel:+12064501343"
+        title = "+12064501343"
+        
+        [[params.contact.list]]
+        class = "website"
+        icon = "fa-globe"
+        url = "//branjam.dev"
+        title = "branjam.dev"
+        
+        [[params.contact.list]]
+        class = "linkedin"
+        icon = "fa-linkedin"
+        url = "//linkedin.com/in/brandon-ellington-60994b73"
+        title = "linkedin.com/in/brandon-ellington-60994b73"
+        
+        [[params.contact.list]]
+        class = "github"
+        icon = "fa-github"
+        url = "//github.com/branjam4"
+        title = "github.com/branjam4"
+        
+
+    # Education section
+    [params.education]
+        enable = true
+        title = "Education"
+
+        [[params.education.list]]
+        degree = "Bachelor of Science"
+        college = "The Evergreen State College"
+        dates = "2017-2020"
+        
+        [[params.education.list]]
+        degree = "Bachelor of Arts"
+        college = "The Evergreen State College"
+        dates = "2017-2020"
+        
+
+    # Languages section
+    [params.language]
+        enable = false
+        title = "Languages"
+
+    # Interests section
+    [params.interests]
+        enable = true
+        title = "Interests"
+
+        [[params.interests.list]]
+        interest = "Extended Reality Applications"
+
+        [[params.interests.list]]
+        interest = "3D printing"
+
+        [[params.interests.list]]
+        interest = "Table tennis"
+
+# Main body sections
+
+    # You may use markdown in summary, details and intro fields. But don't overdose, it's resume!:)
+
+    # Summary section
+    [params.summary]
+        enable = true
+        icon = "fa-user"
+        title = "Career Profile"
+        summary = "How can we create lasting change in our communities when we all have conflicting motivations? In both my personal and professional journey I've been fortunate enough to lend both ears and a shoulder to the unheard and underserved people around me, which led to creative opportunities to solve otherwise complex organizational issues. I'm seeking to unite my skills (synthesis, software development, and active listening) with my passion: working towards fairness, justice, and equal opportunities for everyone."
+
+    # Experiences section
+    [params.experiences]
+        enable = true
+        icon = "fa-briefcase"
+        title = "Experiences"
+
+        [[params.jobs.list]]
+        position = "CRM Lynda.com Fellowship"
+        dates = "2018-2019"
+        company = "The Evergreen State College, Advancement"
+        details = "Shadowed the Assistant Director of Advancement Services. Learned how to use the Blackbaud Raiser's Edge Constituent Relationship Management System. Assisted with data management and building complex database query views through SQL and Excel. Served during campaign events."
+        
+        [[params.jobs.list]]
+        position = "Office Manager"
+        dates = "September 2017 - June 2018"
+        company = "Services and Activities Fee Allocation Board"
+        details = "Reduced budget intake, processing from 5 hours/week to <1 hour by moving from paper budgets to Google Drive, Sheets. Trained 12 board members on the function and operations of the Board."
+        
+        [[params.jobs.list]]
+        position = "Enterprise Software Internship"
+        dates = "June 2017"
+        company = "The Evergreen State College, Computing and Communications"
+        details = "Evaluation from my field supervisor, the Senior Systems Analyst/Programmer: \"Brandon's communication skills were particularly valuable to the team. He facilitated requirements gathering sessions with the users in my absence...He was always willing to adjust coding styles and practices to the team approach. He was the only intern I've ever trusted to lead sprint planning sessions, because he had developed the appropriate soft skills, and because he seemed to grasp the Agile process.\""
+        
+
+    # Projects section
+    [params.projects]
+        enable = true
+        icon = "fa-archive"
+        title = "Projects"
+        intro = "My latest project: the containerized integrated development environment, can be seen on github. The other projects were either done specifically for a client, or were part of academic study as part of a team. In the latter case, I include notes from my faculty to provide context to that work, in lieu of the work itself."
+
+        [[params.projects.list]]
+        title = "Containerized Integrated Development Environment"
+        url = "https://github.com/branjam4/doom-emacs-docker.git"
+        tagline = "I wanted to show some of the productivity gains and programs I had leveraged while learning how to use my development environment. But even though my professor and I both had experience in this development environment, we found it challenging to share programs and configuration strategies given limited time and competing priorities. So I learned to containerize my development environment. Now anyone with Docker can try out my workflows with a couple programs (git, docker) in less than five commands, where previously it could take dozens of programs and commands."
+        
+        [[params.projects.list]]
+        title = "Systems Thinking Modelling Efforts"
+        url = "Evergreen: Self-study"
+        tagline = "Evaluation from faculty: \"[Brandon] demonstrated significant expertise in understanding group and team dynamics. He had attended a meeting with the Team Entrepreneurship program and was able to translate their methodology into a systems approach. His work represents a synthesis of basic concepts from graph theory, communication, and systems theory. The origin of the work had several roots: 1. Brandon’s active participation in student governance, 2. Brandon’s interest in the application of systems theory to social systems, and 3. Brandon’s desire to improve communication and information flow in the Evergreen community.\""
+        
+        [[params.projects.list]]
+        title = "Authorship- Computational Linguistics Project"
+        url = "Evergreen Program: Computational Linguistics"
+        tagline = "Evaluation from faculty: \"Brandon worked with four other students to complete the project on computationally identifying the author of a text. Their well-coordinated final presentation provided an organized overview of their process and a discussion of both obstacles and successes. Brandon provided leadership and empowerment to newer coders by guiding the group towards a process that emphasized an algorithm and descriptive understandings of what the code needed to accomplished, as well as developing the actual code and some of the details of testing strategies. The group embodied a learning community by making a commitment to make sure that everyone understood the algorithm and the code. Brandon also demonstrated their collaborative learning skills by helping two other groups on the project.\""
+        
+        [[params.projects.list]]
+        title = "Sentiment Analysis- Data Mining Project"
+        url = "United Way of Pierce County"
+        tagline = "Worked with a team of five to leverage sentiment analysis algorithms, collecting data in the form of tweets and posts from Facebook, to quantify how receptive Pierce County residents were to United Way's reports on understanding and assisting Pierce County's ALICE (Asset Limited, Income Constrained, Employed) population. I also went a little further and familiarized myself with the methodology and data used to identify our target demographics, which helped my team put our observations into perspective. My group recognized me as the member who went the extra mile in order to connect with our client and fill their needs."
+        
+
+    # Skills section
+    [params.skills]
+        enable = true
+        icon = "fa-rocket"
+        title = "Skills & Proficiency"
+
+        [[params.skills.list]]
+        skill = "Python"
+        level = "66.66666666666666%"
+        
+        [[params.skills.list]]
+        skill = "Functional Programming"
+        level = "73.33333333333334%"
+        
+        [[params.skills.list]]
+        skill = "Object-Oriented Programming"
+        level = "66.66666666666666%"
+        
+        [[params.skills.list]]
+        skill = "Database Management"
+        level = "63.33333333333333%"
+        
+        [[params.skills.list]]
+        skill = "DevOps"
+        level = "50.0%"
+        
+
+    # Footer section
+
+    # The original template is released under the Creative Commons Attribution 3.0 License.
+    # Please keep the original attribution link when using for your own project.
+    # If you'd like to use the template without the attribution,
+    # you can check out other license options via template author's website: themes.3rdwavemedia.com
+    #
+    # As for Hugo port you may rewrite the "Ported for..." line with setting your name below.
+
+    [params.footer]
+        copyright = "Brandon E."
